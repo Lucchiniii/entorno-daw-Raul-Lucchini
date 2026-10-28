@@ -58,8 +58,8 @@ bash: Jupyter: command not found
 
 | Extensión | ¿Para qué sirve? | ¿Qué cambió al instalarla? | ¿La mantengo? ¿Por qué? |
 |-----------|------------------|----------------------------|-------------------------|
-| Extension Pack for Java |   |   |   |
-| Code Spell Checker      |   |   |   |
+| Extension Pack for Java |Facilita la programación en Java con herramientas para escribir, ejecutar y depurar código.   |  Añadió herramientas para Java, autocompletado, detección de errores y depuración. |  Sí, porque facilita programar en Java y detectar errores. |
+| Code Spell Checker      | Revisa la ortografía en el código y detecta palabras mal escritas.  |  Empezó a señalar posibles errores ortográficos en el código y los comentarios. |  Sí, porque ayuda a escribir código y comentarios con menos errores. |
 
 ¿Qué diferencia hay entre instalar una extensión **solo desde el panel** y añadirla **también a `devcontainer.json`**?
 
@@ -117,11 +117,11 @@ TOTAL                         268.50 EUR
 
 | Elemento | ¿Quién lo actualiza? | Modo (automático / manual / ninguno) | Qué he configurado yo |
 |----------|----------------------|--------------------------------------|-----------------------|
-| El editor de Codespaces |   |   |   |
-| Las extensiones         |   |   |   |
-| Java                    |   |   |   |
-| Node.js                 |   |   |   |
-| Dependencias npm (lodash, typescript…) |   |   |   |
+| El editor de Codespaces |  GitHub / Microsoft |  Automático |  Uso el editor web de Codespaces, mantenido por GitHub. |
+| Las extensiones         | GitHub Codespaces y sus respectivos proveedores  | Automático / manual  |  Las extensiones se instalan según la configuración del entorno y pueden actualizarse automáticamente |
+| Java                    |  El usuario o el equipo de desarrollo, mediante la configuración del entorno |  Manual | Definir la versión de JDK en el archivo .devcontainer/devcontainer.json.  |
+| Node.js                 | 	El usuario o el equipo de desarrollo, mediante la configuración del entorno  | Manual | Definir la versión de Node.js en devcontainer.json o mediante un archivo .nvmrc  |
+| Dependencias npm (lodash, typescript…) |  npm y los desarrolladores del proyecto | Manual, con opciones automáticas  | Gestionar las versiones en package.json y package-lock.json; ejecutar npm install o npm ci según corresponda. |
 
 Versión de Java **antes** (paso 5) y **después** (paso 18):
 
